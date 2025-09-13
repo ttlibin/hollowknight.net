@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>路径测试</title>
+</head>
+<body>
+    <h1>测试翻译文件路径</h1>
+    <div id="result"></div>
+    
+    <script>
+        async function testPaths() {
+            const result = document.getElementById('result');
+            const basePaths = ['../../', '../', './'];
+            
+            for (const basePath of basePaths) {
+                try {
+                    const url = basePath + 'translations/zh.json';
+                    result.innerHTML += `<p>测试路径: ${url}</p>`;
+                    
+                    const response = await fetch(url);
+                    if (response.ok) {
+                        const data = await response.json();
+                        result.innerHTML += `<p style="color: green;">✅ 成功! 键数量: ${Object.keys(data).length}</p>`;
+                        
+                        // 测试一下是否有任务相关的键
+                        if (data.hunting_quest_title) {
+                            result.innerHTML += `<p style="color: blue;">✅ 找到任务翻译: ${data.hunting_quest_title}</p>`;
+                        }
+                        break;
+                    } else {
+                        result.innerHTML += `<p style="color: red;">❌ HTTP ${response.status}</p>`;
+                    }
+                } catch (error) {
+                    result.innerHTML += `<p style="color: red;">❌ 错误: ${error.message}</p>`;
+                }
+            }
+        }
+        
+        testPaths();
+    </script>
+</body>
+</html>

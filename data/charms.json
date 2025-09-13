@@ -1,0 +1,486 @@
+{
+  "charms": [
+    {
+      "id": "gathering-swarm",
+      "name": "聚集虫群",
+      "englishName": "Gathering Swarm",
+      "cost": 1,
+      "location": "遗忘十字路",
+      "effect": "自动收集附近的地质物品",
+      "description": "召唤一群小虫帮助收集掉落的地质物品，在探索时非常有用。",
+      "image": "/images/charms/gathering-swarm.png",
+      "type": "探索",
+      "rarity": "common",
+      "combinations": [
+        {
+          "with": ["hiveblood"],
+          "effect": "探索组合 - 自动回血+自动收集"
+        }
+      ]
+    },
+    {
+      "id": "stalwart-shell",
+      "name": "坚固外壳",
+      "englishName": "Stalwart Shell",
+      "cost": 2,
+      "location": "遗忘十字路",
+      "effect": "受伤后增加无敌时间",
+      "description": "受到伤害后延长无敌时间，给玩家更多时间逃脱危险。",
+      "image": "/images/charms/stalwart-shell.png",
+      "type": "防御",
+      "rarity": "common",
+      "combinations": [
+        {
+          "with": ["quick-focus"],
+          "effect": "生存组合 - 延长无敌+快速治疗"
+        }
+      ]
+    },
+    {
+      "id": "soul-catcher",
+      "name": "灵魂捕手",
+      "englishName": "Soul Catcher",
+      "cost": 2,
+      "location": "祖先墓地",
+      "effect": "击败敌人获得更多灵魂",
+      "description": "击败敌人时获得额外的灵魂，有助于更频繁的使用法术和治疗。",
+      "image": "/images/charms/soul-catcher.png",
+      "type": "灵魂",
+      "rarity": "common",
+      "combinations": [
+        {
+          "with": ["soul-eater"],
+          "effect": "灵魂大师 - 大幅增加灵魂获取"
+        },
+        {
+          "with": ["spell-twister"],
+          "effect": "法师组合 - 更多灵魂+减少法术消耗"
+        }
+      ]
+    },
+    {
+      "id": "shaman-stone",
+      "name": "萨满之石",
+      "englishName": "Shaman Stone",
+      "cost": 3,
+      "location": "绿径",
+      "effect": "增加所有法术的威力",
+      "description": "显著提升所有法术的伤害，是法师流玩法的核心魅力。",
+      "image": "/images/charms/shaman-stone.png",
+      "type": "法术",
+      "rarity": "rare",
+      "combinations": [
+        {
+          "with": ["spell-twister", "soul-catcher"],
+          "effect": "终极法师 - 高伤害+低消耗+高回复"
+        }
+      ]
+    },
+    {
+      "id": "soul-eater",
+      "name": "灵魂吞噬者",
+      "englishName": "Soul Eater",
+      "cost": 4,
+      "location": "深邃巢穴",
+      "effect": "击败敌人获得大量额外灵魂",
+      "description": "击败敌人时获得大量额外灵魂，是灵魂捕手的升级版本。",
+      "image": "/images/charms/soul-eater.png",
+      "type": "灵魂",
+      "rarity": "rare",
+      "combinations": [
+        {
+          "with": ["soul-catcher"],
+          "effect": "灵魂大师 - 击败敌人获得大量灵魂"
+        }
+      ]
+    },
+    {
+      "id": "dashmaster",
+      "name": "冲刺大师",
+      "englishName": "Dashmaster",
+      "cost": 2,
+      "location": "雾之峡谷",
+      "effect": "冲刺时造成伤害并缩短冷却时间",
+      "description": "冲刺通过敌人时造成伤害，并减少冲刺冷却时间。",
+      "image": "/images/charms/dashmaster.png",
+      "type": "移动",
+      "rarity": "uncommon",
+      "combinations": [
+        {
+          "with": ["sharp-shadow"],
+          "effect": "影子冲刺 - 更长距离+更高伤害"
+        }
+      ]
+    },
+    {
+      "id": "sprintmaster",
+      "name": "疾跑大师",
+      "englishName": "Sprintmaster",
+      "cost": 1,
+      "location": "雾之峡谷",
+      "effect": "增加移动速度",
+      "description": "提高角色的跑步速度，让探索更加高效。",
+      "image": "/images/charms/sprintmaster.png",
+      "type": "移动",
+      "rarity": "common",
+      "combinations": [
+        {
+          "with": ["dashmaster"],
+          "effect": "速度恶魔 - 超快移动速度"
+        }
+      ]
+    },
+    {
+      "id": "grubsong",
+      "name": "格鲁布之歌",
+      "englishName": "Grubsong",
+      "cost": 1,
+      "location": "遗忘十字路",
+      "effect": "受伤时获得灵魂",
+      "description": "受到伤害时获得灵魂，将伤害转化为治疗机会。",
+      "image": "/images/charms/grubsong.png",
+      "type": "防御",
+      "rarity": "common",
+      "combinations": [
+        {
+          "with": ["deep-focus"],
+          "effect": "深度治疗 - 受伤获得灵魂+治疗更多生命"
+        }
+      ]
+    },
+    {
+      "id": "thorns-of-agony",
+      "name": "痛苦荆棘",
+      "englishName": "Thorns of Agony",
+      "cost": 1,
+      "location": "绿径",
+      "effect": "受伤时释放伤害荆棘",
+      "description": "受到伤害时在周围释放荆棘，对附近敌人造成伤害。",
+      "image": "/images/charms/thorns-of-agony.png",
+      "type": "防御",
+      "rarity": "common",
+      "combinations": [
+        {
+          "with": ["baldur-shell"],
+          "effect": "荆棘要塞 - 受伤反击+阻挡投射物"
+        }
+      ]
+    },
+    {
+      "id": "fury-of-the-fallen",
+      "name": "堕落之怒",
+      "englishName": "Fury of the Fallen",
+      "cost": 2,
+      "location": "王国之刃",
+      "effect": "生命值为1时大幅增加攻击力",
+      "description": "当只剩1点生命时，攻击力大幅提升，高风险高回报的魅力。",
+      "image": "/images/charms/fury-of-the-fallen.png",
+      "type": "攻击",
+      "rarity": "rare",
+      "combinations": [
+        {
+          "with": ["red-tears"],
+          "effect": "最后一击 - 濒死时超高伤害"
+        }
+      ]
+    },
+    {
+      "id": "quick-focus",
+      "name": "快速聚焦",
+      "englishName": "Quick Focus",
+      "cost": 3,
+      "location": "水晶山峰",
+      "effect": "大幅缩短治疗时间",
+      "description": "显著减少聚焦治疗所需的时间，提高战斗中的生存能力。",
+      "image": "/images/charms/quick-focus.png",
+      "type": "治疗",
+      "rarity": "rare",
+      "combinations": [
+        {
+          "with": ["deep-focus"],
+          "effect": "平衡治疗 - 快速+双倍回复"
+        },
+        {
+          "with": ["shape-of-unn"],
+          "effect": "移动治疗 - 快速治疗+移动中治疗"
+        }
+      ]
+    },
+    {
+      "id": "lifeblood-heart",
+      "name": "生命血之心",
+      "englishName": "Lifeblood Heart",
+      "cost": 2,
+      "location": "雾之峡谷",
+      "effect": "增加2点蓝色生命值",
+      "description": "增加额外的蓝色生命值，在坐凳休息时恢复。",
+      "image": "/images/charms/lifeblood-heart.png",
+      "type": "生命",
+      "rarity": "uncommon",
+      "combinations": [
+        {
+          "with": ["lifeblood-core"],
+          "effect": "生命血大师 - 大量额外生命值"
+        }
+      ]
+    },
+    {
+      "id": "lifeblood-core",
+      "name": "生命血核心",
+      "englishName": "Lifeblood Core",
+      "cost": 3,
+      "location": "深邃巢穴",
+      "effect": "增加4点蓝色生命值",
+      "description": "增加大量蓝色生命值，是生命血之心的强化版。",
+      "image": "/images/charms/lifeblood-core.png",
+      "type": "生命",
+      "rarity": "rare",
+      "combinations": [
+        {
+          "with": ["lifeblood-heart"],
+          "effect": "生命血大师 - 获得6点额外生命值"
+        }
+      ]
+    },
+    {
+      "id": "joni-blessing",
+      "name": "乔尼的祝福",
+      "englishName": "Joni's Blessing",
+      "cost": 4,
+      "location": "深渊",
+      "effect": "无法治疗但大幅增加生命血",
+      "description": "移除治疗能力但大幅增加蓝色生命值上限，适合特殊玩法。",
+      "image": "/images/charms/joni-blessing.png",
+      "type": "生命",
+      "rarity": "legendary",
+      "combinations": [
+        {
+          "with": ["hiveblood"],
+          "effect": "血蜂组合 - 无治疗+自动回血"
+        }
+      ]
+    },
+    {
+      "id": "heavy-blow",
+      "name": "重击",
+      "englishName": "Heavy Blow",
+      "cost": 2,
+      "location": "遗忘十字路",
+      "effect": "攻击更容易击退敌人",
+      "description": "增加攻击的击退效果，让敌人更容易被推开。",
+      "image": "/images/charms/heavy-blow.png",
+      "type": "攻击",
+      "rarity": "common",
+      "combinations": [
+        {
+          "with": ["mark-of-pride"],
+          "effect": "长臂重拳 - 远距离强击退"
+        }
+      ]
+    },
+    {
+      "id": "quick-slash",
+      "name": "快速斩击",
+      "englishName": "Quick Slash",
+      "cost": 3,
+      "location": "王国之刃",
+      "effect": "大幅增加攻击速度",
+      "description": "显著提高骨钉攻击速度，是近战流的核心魅力之一。",
+      "image": "/images/charms/quick-slash.png",
+      "type": "攻击",
+      "rarity": "rare",
+      "combinations": [
+        {
+          "with": ["mark-of-pride", "steady-body"],
+          "effect": "剑圣组合 - 快速+长距离+稳定攻击"
+        }
+      ]
+    },
+    {
+      "id": "longnail",
+      "name": "长钉",
+      "englishName": "Longnail",
+      "cost": 2,
+      "location": "雾之峡谷",
+      "effect": "增加骨钉攻击距离",
+      "description": "延长骨钉的攻击范围，让玩家可以在更安全的距离攻击。",
+      "image": "/images/charms/longnail.png",
+      "type": "攻击",
+      "rarity": "uncommon",
+      "combinations": [
+        {
+          "with": ["mark-of-pride"],
+          "effect": "傲慢长钉 - 超长攻击距离"
+        }
+      ]
+    },
+    {
+      "id": "mark-of-pride",
+      "name": "傲慢印记",
+      "englishName": "Mark of Pride",
+      "cost": 3,
+      "location": "螳螂村",
+      "effect": "大幅增加骨钉攻击距离",
+      "description": "极大地延长骨钉攻击范围，是长钉的升级版本。",
+      "image": "/images/charms/mark-of-pride.png",
+      "type": "攻击",
+      "rarity": "rare",
+      "combinations": [
+        {
+          "with": ["longnail"],
+          "effect": "傲慢长钉 - 极长攻击距离"
+        },
+        {
+          "with": ["quick-slash"],
+          "effect": "长臂剑圣 - 快速+长距离攻击"
+        }
+      ]
+    },
+    {
+      "id": "steady-body",
+      "name": "稳固身躯",
+      "englishName": "Steady Body",
+      "cost": 1,
+      "location": "泪水之城",
+      "effect": "攻击时不会后退",
+      "description": "攻击时保持位置不变，避免被自己的攻击推开。",
+      "image": "/images/charms/steady-body.png",
+      "type": "攻击",
+      "rarity": "common",
+      "combinations": [
+        {
+          "with": ["quick-slash"],
+          "effect": "稳定输出 - 快速且稳定的攻击"
+        }
+      ]
+    },
+    {
+      "id": "strength",
+      "name": "力量",
+      "englishName": "Strength",
+      "cost": 3,
+      "location": "螳螂村",
+      "effect": "增加骨钉攻击伤害",
+      "description": "直接提升骨钉造成的伤害，简单有效的伤害提升。",
+      "image": "/images/charms/strength.png",
+      "type": "攻击",
+      "rarity": "rare",
+      "combinations": [
+        {
+          "with": ["quick-slash", "mark-of-pride"],
+          "effect": "强力剑圣 - 高伤害+快速+长距离"
+        }
+      ]
+    }
+  ],
+  "charmTypes": [
+    {
+      "id": "attack",
+      "name": "攻击",
+      "description": "提升伤害输出的魅力",
+      "color": "#ff4444"
+    },
+    {
+      "id": "defense",
+      "name": "防御",
+      "description": "提升防御和生存能力的魅力",
+      "color": "#4444ff"
+    },
+    {
+      "id": "spell",
+      "name": "法术",
+      "description": "增强法术效果的魅力",
+      "color": "#9944ff"
+    },
+    {
+      "id": "soul",
+      "name": "灵魂",
+      "description": "影响灵魂获取和使用的魅力",
+      "color": "#44ff44"
+    },
+    {
+      "id": "movement",
+      "name": "移动",
+      "description": "提升移动能力的魅力",
+      "color": "#ffff44"
+    },
+    {
+      "id": "healing",
+      "name": "治疗",
+      "description": "影响治疗效果的魅力",
+      "color": "#ff44ff"
+    },
+    {
+      "id": "life",
+      "name": "生命",
+      "description": "增加生命值的魅力",
+      "color": "#ff8844"
+    },
+    {
+      "id": "exploration",
+      "name": "探索",
+      "description": "帮助探索的魅力",
+      "color": "#44ffff"
+    }
+  ],
+  "rarityLevels": [
+    {
+      "id": "common",
+      "name": "普通",
+      "description": "容易获得的基础魅力",
+      "color": "#ffffff"
+    },
+    {
+      "id": "uncommon",
+      "name": "稀有",
+      "description": "需要一定条件获得的魅力",
+      "color": "#44ff44"
+    },
+    {
+      "id": "rare",
+      "name": "珍贵",
+      "description": "难以获得的强力魅力",
+      "color": "#4444ff"
+    },
+    {
+      "id": "legendary",
+      "name": "传说",
+      "description": "极其罕见的特殊魅力",
+      "color": "#ff44ff"
+    }
+  ],
+  "buildRecommendations": [
+    {
+      "id": "melee-dps",
+      "name": "近战输出流",
+      "description": "专注于骨钉攻击的高伤害输出",
+      "charms": ["quick-slash", "mark-of-pride", "strength", "steady-body"],
+      "totalCost": 9,
+      "playstyle": "aggressive"
+    },
+    {
+      "id": "spell-caster",
+      "name": "法师流",
+      "description": "专注于法术攻击的远程输出",
+      "charms": ["shaman-stone", "spell-twister", "soul-catcher", "soul-eater"],
+      "totalCost": 11,
+      "playstyle": "ranged"
+    },
+    {
+      "id": "tank-build",
+      "name": "坦克流",
+      "description": "高生存能力的防御型配置",
+      "charms": ["quick-focus", "deep-focus", "lifeblood-core", "stalwart-shell"],
+      "totalCost": 10,
+      "playstyle": "defensive"
+    },
+    {
+      "id": "speed-runner",
+      "name": "速通流",
+      "description": "专注于快速移动和探索",
+      "charms": ["dashmaster", "sprintmaster", "sharp-shadow", "gathering-swarm"],
+      "totalCost": 8,
+      "playstyle": "mobility"
+    }
+  ]
+}

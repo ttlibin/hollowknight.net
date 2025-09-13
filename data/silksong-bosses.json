@@ -1,0 +1,270 @@
+{
+  "bosses": [
+    {
+      "id": "lace",
+      "name": "蕾丝",
+      "englishName": "Lace",
+      "difficulty": 4,
+      "location": "深邃圣堡",
+      "description": "身法敏捷的武士，掌握着危险的剑术技巧。战斗节奏快速且致命。",
+      "image": "/images/bosses/silksong/lace.jpg",
+      "type": "传奇头目",
+      "reward": "特殊武器技能",
+      "attacks": [
+        {
+          "name": "连续斩击",
+          "description": "快速的多段攻击组合",
+          "damage": 2,
+          "counter": "利用空中机动性躲避"
+        },
+        {
+          "name": "冲刺突刺",
+          "description": "远距离突进攻击",
+          "damage": 3,
+          "counter": "侧向闪避并反击"
+        }
+      ],
+      "strategy": "保持移动，利用Hornet的空中优势"
+    },
+    {
+      "id": "moss-mother",
+      "name": "苔藓之母",
+      "englishName": "Moss Mother",
+      "difficulty": 2,
+      "location": "苔藓洞窟",
+      "description": "巨大的植物型生物，控制着整片苔藓区域的生态。",
+      "image": "/images/bosses/silksong/moss-mother.jpg",
+      "type": "区域守护者",
+      "reward": "苔藓洞窟通行证",
+      "attacks": [
+        {
+          "name": "孢子爆发",
+          "description": "释放毒性孢子云",
+          "damage": 1,
+          "counter": "远离孢子云范围"
+        },
+        {
+          "name": "藤蔓缠绕",
+          "description": "地面伸出藤蔓攻击",
+          "damage": 2,
+          "counter": "跳跃躲避并攻击本体"
+        }
+      ],
+      "strategy": "优先清理小苔藓，然后集中攻击本体"
+    },
+    {
+      "id": "caravan-captain",
+      "name": "商队队长",
+      "englishName": "Caravan Captain",
+      "difficulty": 3,
+      "location": "镀金城邦",
+      "description": "身穿华丽盔甲的商队领袖，拥有丰富的战斗经验。",
+      "image": "/images/bosses/silksong/caravan-captain.jpg",
+      "type": "精英敌人",
+      "reward": "镀金钥匙",
+      "attacks": [
+        {
+          "name": "盾击冲撞",
+          "description": "用巨大盾牌冲撞",
+          "damage": 2,
+          "counter": "绕到背后攻击"
+        },
+        {
+          "name": "号令士兵",
+          "description": "召唤小兵协助战斗",
+          "damage": 1,
+          "counter": "优先清理小兵"
+        }
+      ],
+      "strategy": "破坏盔甲弱点，利用环境优势"
+    },
+    {
+      "id": "seth",
+      "name": "赛斯",
+      "englishName": "Seth",
+      "difficulty": 5,
+      "location": "雾锁荒原",
+      "description": "神秘的远古战士，掌握着失传的战斗技艺。",
+      "image": "/images/bosses/silksong/seth.jpg",
+      "type": "传说Boss",
+      "reward": "远古武器碎片",
+      "attacks": [
+        {
+          "name": "影分身",
+          "description": "创造多个分身同时攻击",
+          "damage": 3,
+          "counter": "识别真身并集中攻击"
+        },
+        {
+          "name": "能量波",
+          "description": "释放强力能量攻击",
+          "damage": 4,
+          "counter": "利用地形掩护"
+        }
+      ],
+      "strategy": "需要完美的时机掌握和反应能力"
+    },
+    {
+      "id": "coral-guardian",
+      "name": "珊瑚守护者",
+      "englishName": "Coral Guardian",
+      "difficulty": 3,
+      "location": "珊瑚森林",
+      "description": "美丽而致命的海洋生物，保护着珊瑚森林的秘密。",
+      "image": "/images/bosses/silksong/coral-guardian.jpg",
+      "type": "自然守护者",
+      "reward": "水之精华",
+      "attacks": [
+        {
+          "name": "水流冲击",
+          "description": "发射高压水流",
+          "damage": 2,
+          "counter": "利用珊瑚作掩护"
+        },
+        {
+          "name": "治愈光环",
+          "description": "恢复自身生命值",
+          "damage": 0,
+          "counter": "中断其治愈过程"
+        }
+      ],
+      "strategy": "破坏周围的珊瑚来削弱其力量"
+    }
+  ],
+  "questTypes": [
+    {
+      "id": "hunt",
+      "name": "猎杀任务",
+      "description": "狩猎特定的危险生物",
+      "icon": "🏹",
+      "reward": "丝线和经验"
+    },
+    {
+      "id": "collect",
+      "name": "收集任务", 
+      "description": "收集稀有材料和物品",
+      "icon": "💎",
+      "reward": "制作材料"
+    },
+    {
+      "id": "explore",
+      "name": "探索任务",
+      "description": "发现隐藏区域和秘密",
+      "icon": "🗺️",
+      "reward": "地图和能力升级"
+    },
+    {
+      "id": "grand-hunt",
+      "name": "大狩猎",
+      "description": "挑战最危险的传奇生物",
+      "icon": "👑",
+      "reward": "传说装备"
+    }
+  ],
+  "regions": [
+    {
+      "id": "moss-grotto",
+      "name": "苔藓洞窟",
+      "englishName": "Moss Grotto",
+      "description": "湿润的洞穴系统，充满了发光的苔藓和神秘的植物生命",
+      "enemies": 25,
+      "bosses": 3,
+      "secrets": 8
+    },
+    {
+      "id": "gilded-city",
+      "name": "镀金城邦",
+      "englishName": "Gilded City",
+      "description": "繁华的商业中心，充满了财富、阴谋和危险",
+      "enemies": 30,
+      "bosses": 4,
+      "secrets": 12
+    },
+    {
+      "id": "coral-forest",
+      "name": "珊瑚森林",
+      "englishName": "Coral Forest",
+      "description": "美丽的水下森林，珊瑚构成了复杂的迷宫",
+      "enemies": 28,
+      "bosses": 3,
+      "secrets": 10
+    },
+    {
+      "id": "bonebottom",
+      "name": "骨底深渊",
+      "englishName": "Bonebottom",
+      "description": "古老的骨骸堆积之地，充满了死亡的气息",
+      "enemies": 35,
+      "bosses": 5,
+      "secrets": 15
+    },
+    {
+      "id": "greymoor",
+      "name": "雾锁荒原",
+      "englishName": "Greymoor",
+      "description": "迷雾笼罩的荒凉之地，隐藏着远古的秘密",
+      "enemies": 32,
+      "bosses": 4,
+      "secrets": 18
+    },
+    {
+      "id": "citadel",
+      "name": "闪耀圣堡",
+      "englishName": "Shining Citadel",
+      "description": "王国的最高点，神圣而危险的最终目标",
+      "enemies": 40,
+      "bosses": 8,
+      "secrets": 25
+    }
+  ],
+  "tools": [
+    {
+      "id": "needle",
+      "name": "骨针",
+      "englishName": "Needle",
+      "type": "武器",
+      "description": "Hornet的主要武器，可以进行快速突刺攻击",
+      "upgrades": ["延长攻击距离", "增加伤害", "添加元素效果"]
+    },
+    {
+      "id": "silk-trap",
+      "name": "丝线陷阱",
+      "englishName": "Silk Trap",
+      "type": "陷阱",
+      "description": "可以设置的陷阱，困住敌人并造成伤害",
+      "upgrades": ["增加持续时间", "添加毒素效果", "范围爆炸"]
+    },
+    {
+      "id": "silk-sling",
+      "name": "丝索摆荡",
+      "englishName": "Silk Sling",
+      "type": "移动工具",
+      "description": "使用丝线在环境中摆荡和移动",
+      "upgrades": ["增加摆荡距离", "空中急停", "连续摆荡"]
+    },
+    {
+      "id": "healing-cocoon",
+      "name": "治愈茧",
+      "englishName": "Healing Cocoon",
+      "type": "治疗",
+      "description": "消耗丝线进行治疗的主动技能",
+      "upgrades": ["缩短治疗时间", "增加治疗量", "治疗时获得护盾"]
+    }
+  ],
+  "resources": [
+    {
+      "id": "silk",
+      "name": "丝线",
+      "englishName": "Silk",
+      "description": "主要资源，用于制作、升级和治疗",
+      "sources": ["击败敌人", "破坏丝囊", "完成任务"]
+    },
+    {
+      "id": "rosaries",
+      "name": "念珠",
+      "englishName": "Rosaries",
+      "description": "特殊资源，用于强化和解锁新能力",
+      "sources": ["Boss战胜利", "隐藏宝箱", "特殊事件"]
+    }
+  ]
+}

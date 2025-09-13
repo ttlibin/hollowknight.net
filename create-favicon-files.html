@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Favicon Files</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: #f5f5dc;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #ffa500;
+        }
+        
+        canvas {
+            border: 1px solid #444;
+            margin: 10px;
+            border-radius: 4px;
+        }
+        
+        .download-btn {
+            background: #ffa500;
+            color: #1a1a1a;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 5px;
+        }
+        
+        .download-btn:hover {
+            background: #ff8c00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🕸️ 丝线编织 Favicon 生成器</h1>
+        <p>为您选择的方案4生成各种格式的favicon文件</p>
+        
+        <div>
+            <h3>32x32 PNG</h3>
+            <canvas id="canvas32" width="32" height="32"></canvas>
+            <br>
+            <button class="download-btn" onclick="downloadCanvas('canvas32', 'favicon-32x32.png')">下载 32x32 PNG</button>
+        </div>
+        
+        <div>
+            <h3>16x16 PNG</h3>
+            <canvas id="canvas16" width="16" height="16"></canvas>
+            <br>
+            <button class="download-btn" onclick="downloadCanvas('canvas16', 'favicon-16x16.png')">下载 16x16 PNG</button>
+        </div>
+        
+        <div>
+            <h3>Apple Touch Icon (180x180)</h3>
+            <canvas id="canvas180" width="180" height="180"></canvas>
+            <br>
+            <button class="download-btn" onclick="downloadCanvas('canvas180', 'apple-touch-icon.png')">下载 Apple Touch Icon</button>
+        </div>
+    </div>
+
+    <script>
+        function drawWebIcon(canvas, size) {
+            const ctx = canvas.getContext('2d');
+            const scale = size / 32;
+            
+            // 背景
+            const bgGradient = ctx.createLinearGradient(0, 0, size, size);
+            bgGradient.addColorStop(0, '#8b4513');
+            bgGradient.addColorStop(1, '#2c1810');
+            ctx.fillStyle = bgGradient;
+            ctx.fillRect(0, 0, size, size);
+            
+            // 设置线条样式
+            ctx.strokeStyle = '#ffa500';
+            ctx.lineWidth = Math.max(1, size * 0.03);
+            ctx.globalAlpha = 0.8;
+            
+            // 径向线
+            const centerX = size / 2;
+            const centerY = size / 2;
+            const maxRadius = size * 0.4;
+            
+            // 8条径向线
+            for (let i = 0; i < 8; i++) {
+                const angle = (i * Math.PI * 2) / 8;
+                const endX = centerX + Math.cos(angle) * maxRadius;
+                const endY = centerY + Math.sin(angle) * maxRadius;
+                
+                ctx.beginPath();
+                ctx.moveTo(centerX, centerY);
+                ctx.lineTo(endX, endY);
+                ctx.stroke();
+            }
+            
+            // 同心圆
+            ctx.globalAlpha = 0.6;
+            for (let i = 1; i <= 3; i++) {
+                const radius = (maxRadius * i) / 3;
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+                ctx.stroke();
+            }
+            
+            // 中心点
+            ctx.globalAlpha = 1;
+            ctx.fillStyle = '#ffa500';
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, Math.max(2, size * 0.06), 0, Math.PI * 2);
+            ctx.fill();
+        }
+        
+        function downloadCanvas(canvasId, filename) {
+            const canvas = document.getElementById(canvasId);
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+        
+        // 初始化所有画布
+        window.onload = function() {
+            drawWebIcon(document.getElementById('canvas32'), 32);
+            drawWebIcon(document.getElementById('canvas16'), 16);
+            drawWebIcon(document.getElementById('canvas180'), 180);
+        };
+    </script>
+</body>
+</html>

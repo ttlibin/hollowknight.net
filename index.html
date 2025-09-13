@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight: Silksong Guide | Complete Strategy Guide</title>
+    <meta name="description" content="Comprehensive Hollow Knight: Silksong strategy guide including boss strategies, quest system, weapon crafting, exploration maps and all new content.">
+    <meta name="keywords" content="Hollow Knight Silksong, guide, Hornet, boss strategies, quest system, weapon crafting, exploration">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="favicon.svg" alt="Hollow Knight Silksong" class="logo-img">
+                <span class="logo-text">Hollow Knight: Silksong</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/map/index.html" class="nav-link">Pharloom Map</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/bosses/index.html" class="nav-link">Boss Guides</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/quests/index.html" class="nav-link">Quest System</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/tools/index.html" class="nav-link">Weapons & Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/guides/index.html" class="nav-link">Beginner Guide</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页面区域 -->
+    <main>
+        <!-- 首页英雄区域 -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hollow Knight: Silksong</h1>
+                    <p class="hero-subtitle">Play as Hornet, the deadly hunter, in an epic adventure through the mysterious kingdom of Pharloom.</p>
+                    <p class="hero-description">Master silk weapons, explore diverse regions, and challenge 200+ enemies and 40+ legendary bosses in this action-packed sequel.</p>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/pFAknD_9U7c?autohide=1&autoplay=0&controls=1&enablejsapi=1&iv_load_policy=3&loop=1&playlist=pFAknD_9U7c&modestbranding=1&playsinline=1&rel=0&showinfo=0&cc_load_policy=0&disablekb=1&fs=1" 
+                            title="Hollow Knight: Silksong Reveal Trailer" 
+                            class="hero-video"
+                            frameborder="0" 
+                            allowfullscreen 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin">
+                        </iframe>
+                    </div>
+                    <img src="images/hornet-hero.png" alt="大黄蜂 Hornet" class="knight-img fallback-image">
+                </div>
+            </div>
+            <div class="hero-bg"></div>
+        </section>
+
+        <!-- 快速导航 -->
+        <section id="map" class="quick-nav">
+            <div class="container">
+                <h2 class="section-title">Quick Navigation</h2>
+                <div class="nav-grid">
+                    <a href="pages/map/index.html" class="nav-card" data-section="map">
+                        <div class="card-icon">🗺️</div>
+                        <h3>Pharloom Map</h3>
+                        <p>Explore 10+ regions including Moss Grotto, Gilded City, Bonebottom and more</p>
+                    </a>
+                    <a href="pages/bosses/index.html" class="nav-card" data-section="bosses">
+                        <div class="card-icon">⚔️</div>
+                        <h3>Boss Guides</h3>
+                        <p>Conquer 40+ legendary bosses, master Hornet's combat skills</p>
+                    </a>
+                    <a href="pages/quests/index.html" class="nav-card" data-section="quests">
+                        <div class="card-icon">📜</div>
+                        <h3>Quest System</h3>
+                        <p>Complete four types of quests: Hunt, Collect, Explore, and Great Hunt</p>
+                    </a>
+                    <a href="pages/tools/index.html" class="nav-card" data-section="tools">
+                        <div class="card-icon">🔧</div>
+                        <h3>Weapons & Tools</h3>
+                        <p>Forge powerful weapons, traps and mechanisms, master silk abilities</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 最新攻略和视频 -->
+        <section id="bosses" class="latest-guides">
+            <div class="container">
+                <h2 class="section-title">Latest Guides and Videos</h2>
+                
+                <!-- 官方视频区域 -->
+                <div class="video-section">
+                    <h3 class="video-title">🎥 Official Trailers & Gameplay</h3>
+                    <div class="video-grid">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6XGeJwsUP9c" 
+                                title="Hollow Knight: Silksong - Release Trailer" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="video-info">
+                                <h4>Silksong Release Trailer</h4>
+                                <p>Official release trailer showcasing Hornet's adventure in Pharloom Kingdom</p>
+                            </div>
+                        </div>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Rn5pOXujszQ" 
+                                title="12 Tips That'll Make Your Life Easier In SILKSONG" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="video-info">
+                                <h4>12 Essential Game Tips</h4>
+                                <p>Essential tips to make your Silksong gameplay experience smoother</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 攻略文章 -->
+                <div class="guides-grid">
+                    <article class="guide-card featured">
+                        <div class="guide-icon">
+                            <img src="images/guides/hornet-icon.svg" alt="Hornet Icon" class="guide-icon-img">
+                        </div>
+                        <div class="guide-content">
+                            <span class="new-badge">NEW</span>
+                            <h3>Hornet Combat Basics</h3>
+                            <p>Master Hornet's unique skills: thrust, silk rope swing, double jump and more</p>
+                            <span class="guide-difficulty">Difficulty: ★★★☆☆</span>
+                        </div>
+                    </article>
+                    <article class="guide-card">
+                        <div class="guide-icon">
+                            <img src="images/guides/map-icon.svg" alt="Map Icon" class="guide-icon-img">
+                        </div>
+                        <div class="guide-content">
+                            <h3>Complete Pharloom Map</h3>
+                            <p>Detailed guide to 10+ regions including Moss Grotto, Gilded City, Bonebottom</p>
+                            <span class="guide-difficulty">Difficulty: ★★☆☆☆</span>
+                        </div>
+                    </article>
+                    <article class="guide-card">
+                        <div class="guide-icon">
+                            <img src="images/guides/silk-soul-icon.svg" alt="Silk Soul Icon" class="guide-icon-img">
+                        </div>
+                        <div class="guide-content">
+                            <h3>Silk Soul Mode Challenge</h3>
+                            <p>Ultimate difficulty mode, upgraded version of Steel Soul from the original</p>
+                            <span class="guide-difficulty">Difficulty: ★★★★★</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 任务系统 -->
+        <section id="quests" class="quest-system">
+            <div class="container">
+                <h2 class="section-title">Quest System Guide</h2>
+                <p class="section-subtitle">Complete four types of quests, unlock new areas and powerful equipment</p>
+                
+                <div class="quest-types-grid">
+                    <div class="quest-type-card">
+                        <div class="quest-icon">🏹</div>
+                        <h3>Hunting Quests</h3>
+                        <p>Hunt designated dangerous creatures and Bosses, obtain silk and experience rewards</p>
+                        <div class="quest-features">
+                            <span class="feature">• Clear objectives</span>
+                            <span class="feature">• Combat challenges</span>
+                            <span class="feature">• Generous rewards</span>
+                        </div>
+                    </div>
+                    
+                    <div class="quest-type-card">
+                        <div class="quest-icon">💎</div>
+                        <h3>Collection Quests</h3>
+                        <p>Collect rare materials and special items, used for crafting and upgrading equipment</p>
+                        <div class="quest-features">
+                            <span class="feature">• Exploration-oriented</span>
+                            <span class="feature">• Crafting materials</span>
+                            <span class="feature">• Equipment upgrades</span>
+                        </div>
+                    </div>
+                    
+                    <div class="quest-type-card">
+                        <div class="quest-icon">🗺️</div>
+                        <h3>Exploration Quests</h3>
+                        <p>Discover hidden areas and secrets, unlock maps and new abilities</p>
+                        <div class="quest-features">
+                            <span class="feature">• Hidden areas</span>
+                            <span class="feature">• Map expansion</span>
+                            <span class="feature">• Ability unlocking</span>
+                        </div>
+                    </div>
+                    
+                    <div class="quest-type-card featured">
+                        <div class="quest-icon">👑</div>
+                        <h3>Great Hunt</h3>
+                        <p>Challenge the most dangerous legendary creatures, obtain legendary equipment and rewards</p>
+                        <div class="quest-features">
+                            <span class="feature">• Ultimate challenge</span>
+                            <span class="feature">• Legendary equipment</span>
+                            <span class="feature">• Achievement unlocking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 武器工具系统 -->
+        <section id="tools" class="tools-system">
+            <div class="container">
+                <h2 class="section-title">Weapons & Tools Crafting</h2>
+                <p class="section-subtitle">Master silk abilities, forge powerful weapons and practical tools</p>
+                
+                <div class="tools-categories">
+                    <div class="tools-category">
+                        <h3>🗡️ Combat Weapons</h3>
+                        <div class="tools-grid">
+                            <div class="tool-item">
+                                <div class="tool-icon">⚔️</div>
+                                <h4>Needle Enhancement</h4>
+                                <p>Increase attack range and damage</p>
+                            </div>
+                            <div class="tool-item">
+                                <div class="tool-icon">🌪️</div>
+                                <h4>Cyclone Slash</h4>
+                                <p>Area attack skill</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tools-category">
+                        <h3>🕸️ Silk Tools</h3>
+                        <div class="tools-grid">
+                            <div class="tool-item">
+                                <div class="tool-icon">🪤</div>
+                                <h4>Silk Traps</h4>
+                                <p>Trap and damage enemies</p>
+                            </div>
+                            <div class="tool-item">
+                                <div class="tool-icon">🎯</div>
+                                <h4>Silk Rope Swing</h4>
+                                <p>Fast movement and exploration</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tools-category">
+                        <h3>💊 Survival Tools</h3>
+                        <div class="tools-grid">
+                            <div class="tool-item">
+                                <div class="tool-icon">🛡️</div>
+                                <h4>Healing Cocoon</h4>
+                                <p>Consume silk for quick healing</p>
+                            </div>
+                            <div class="tool-item">
+                                <div class="tool-icon">⚡</div>
+                                <h4>Energy Shield</h4>
+                                <p>Temporary protective barrier</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="resource-info">
+                    <h3>Resource System</h3>
+                    <div class="resources-grid">
+                        <div class="resource-card">
+                            <div class="resource-icon">🧵</div>
+                            <h4>Silk</h4>
+                            <p>Primary resource used for crafting, upgrading and healing. Obtained by defeating enemies and destroying silk sacs.</p>
+                        </div>
+                        <div class="resource-card">
+                            <div class="resource-icon">📿</div>
+                            <h4>Rosaries</h4>
+                            <p>Rare resource used to unlock advanced abilities. Obtained through boss battles and special events.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 游戏统计 -->
+        <section class="game-stats">
+            <div class="container">
+                <h2 class="section-title">Silksong Game Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">40+</div>
+                        <div class="stat-label">Legendary Bosses</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Fierce Enemies</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Regions</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Quest Types</div>
+                    </div>
+                </div>
+                
+                <!-- 游戏信息卡片 -->
+                <div class="game-info-cards">
+                    <div class="info-card">
+                        <h3>🎮 Release Information</h3>
+                        <p><strong>Release Date:</strong> September 4, 2025</p>
+                        <p><strong>Price:</strong> $19.99</p>
+                        <p><strong>Platforms:</strong> Switch / PC / Xbox / PS4/5</p>
+                        <p><strong>Language:</strong> Full English support</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>⚔️ Game Features</h3>
+                        <p><strong>Protagonist:</strong> Hornet</p>
+                        <p><strong>World:</strong> Pharloom Kingdom</p>
+                        <p><strong>Resources:</strong> Silk + Rosaries dual system</p>
+                        <p><strong>Difficulty:</strong> Silk Soul mode challenge</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🔧 System Requirements</h3>
+                        <p><strong>Minimum:</strong> i3-3240 + GTX 560Ti</p>
+                        <p><strong>Recommended:</strong> i5-3470 + GTX 1050</p>
+                        <p><strong>Memory:</strong> 4GB / 8GB RAM</p>
+                        <p><strong>Storage:</strong> 8GB available space</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Silksong Guide Site</h3>
+                    <p>Dedicated to providing the most comprehensive and accurate Hollow Knight: Silksong guides and strategies.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#map">Pharloom Map</a></li>
+                        <li><a href="#bosses">Boss Guides</a></li>
+                        <li><a href="#quests">Quest System</a></li>
+                        <li><a href="#tools">Weapons & Tools</a></li>
+                        <li><a href="pages/guides/index.html">Beginner Tutorial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Game Resources</h4>
+                    <ul>
+                        <li><a href="https://www.teamcherry.com.au/" target="_blank">Team Cherry Official</a></li>
+                        <li><a href="https://store.steampowered.com/" target="_blank">Steam Page</a></li>
+                        <li><a href="https://www.nintendo.com/" target="_blank">Nintendo eShop</a></li>
+                        <li><a href="https://www.xbox.com/games/" target="_blank">Xbox Game Pass</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hollow Knight Guide Site. Content for educational and exchange purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

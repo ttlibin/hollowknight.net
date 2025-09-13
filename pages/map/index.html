@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharloom Map - Hollow Knight: Silksong</title>
+    <meta name="description" content="Complete Hollow Knight: Silksong Pharloom Kingdom map guide, including all regions, exploration routes, hidden areas and important location markers.">
+    <meta name="keywords" content="Hollow Knight Silksong, Pharloom map, game map, exploration guide, region guide">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/map.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../../favicon.svg" alt="Hollow Knight Silksong" class="logo-img">
+                <span class="logo-text">Hollow Knight: Silksong</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../map/index.html" class="nav-link active">Pharloom Map</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../bosses/index.html" class="nav-link">Boss Guides</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../quests/index.html" class="nav-link">Quest System</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../tools/index.html" class="nav-link">Weapons & Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../guides/index.html" class="nav-link">Beginner Guide</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <div class="container">
+            <!-- 页面标题 -->
+            <section class="page-header">
+                <h1 class="page-title">Pharloom Kingdom Map</h1>
+                <p class="page-subtitle">Explore the mysterious continent ruled by silk and song, discover the secrets and treasures of each region</p>
+            </section>
+
+            <!-- 地图概览 -->
+            <section class="map-overview">
+                <div class="map-container">
+                    <!-- 地图标题 -->
+                    <div class="map-title">
+                        <h3>Hollow Knight: Silksong Complete Map</h3>
+                    </div>
+                    
+                    <!-- 地图控制按钮 -->
+                    <div class="map-controls">
+                        <button class="map-btn zoom-in" id="zoomIn" title="Zoom In">
+                            <span>+</span>
+                        </button>
+                        <button class="map-btn zoom-out" id="zoomOut" title="Zoom Out">
+                            <span>−</span>
+                        </button>
+                        <button class="map-btn reset-view" id="resetView" title="Reset View">
+                            <span>⌂</span>
+                        </button>
+                        <div class="zoom-indicator">
+                            <span id="zoomLevel">100%</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 可拖拽的地图视图区域 -->
+                    <div class="map-viewport" id="mapViewport">
+                        <div class="map-loading" id="mapLoading">
+                            <div class="loading-spinner"></div>
+                            <p>Loading map...</p>
+                        </div>
+                        <div class="map-wrapper" id="mapWrapper">
+                            <img src="../../images/maps/map1.png" alt="Pharloom Kingdom Complete Map" class="map-image" id="mapImage">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 区域详情 -->
+            <section class="regions-section">
+                <h2 class="section-title">Main Regions</h2>
+                <div class="regions-grid">
+                    <div class="region-card">
+                        <img src="../../images/guides/moss-grotto.jpg" alt="Moss Grotto" class="region-image">
+                        <div class="region-info">
+                            <h3>Moss Grotto</h3>
+                            <p>The starting area of the game, filled with green vegetation and mysterious caves. This is where Hornet begins her adventure.</p>
+                            <div class="region-features">
+                                <span class="feature">🏠 Starting Area</span>
+                                <span class="feature">🌱 Lush Vegetation</span>
+                                <span class="feature">⭐ Difficulty: Easy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="region-card">
+                        <img src="../../images/guides/coral-forest.jpg" alt="Coral Forest" class="region-image">
+                        <div class="region-info">
+                            <h3>Coral Forest</h3>
+                            <p>An underwater-themed area filled with coral and marine life. Features unique underwater combat mechanics.</p>
+                            <div class="region-features">
+                                <span class="feature">🌊 Underwater Environment</span>
+                                <span class="feature">🐠 Marine Life</span>
+                                <span class="feature">⭐ Difficulty: Medium</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="region-card">
+                        <img src="../../images/guides/gilded-city.jpg" alt="Gilded City" class="region-image">
+                        <div class="region-info">
+                            <h3>Gilded City</h3>
+                            <p>A magnificent golden city filled with ancient architecture and powerful guardians. Hides important secrets of the kingdom.</p>
+                            <div class="region-features">
+                                <span class="feature">🏰 Ancient City</span>
+                                <span class="feature">💰 Golden Decorations</span>
+                                <span class="feature">⭐ Difficulty: Hard</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="region-card">
+                        <img src="../../images/guides/bonebottom.jpg" alt="Bonebottom" class="region-image">
+                        <div class="region-info">
+                            <h3>Bonebottom</h3>
+                            <p>The deepest area in the game, filled with ancient bones and dangerous enemies. Challenges players' skills and courage.</p>
+                            <div class="region-features">
+                                <span class="feature">💀 Bones Everywhere</span>
+                                <span class="feature">👹 Powerful Enemies</span>
+                                <span class="feature">⭐ Difficulty: Extreme</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="region-card">
+                        <img src="../../images/guides/citadel.jpg" alt="Citadel" class="region-image">
+                        <div class="region-info">
+                            <h3>Citadel</h3>
+                            <p>The highest point of the kingdom and the ultimate goal. Here awaits the most powerful challenges and the game's ultimate secrets.</p>
+                            <div class="region-features">
+                                <span class="feature">✨ Kingdom Peak</span>
+                                <span class="feature">👑 Final Goal</span>
+                                <span class="feature">⭐ Difficulty: Epic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 探索技巧 -->
+            <section class="exploration-tips">
+                <h2 class="section-title">Exploration Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">🔍</div>
+                        <h3>Search Carefully</h3>
+                        <p>Every area has hidden passages and secret rooms. Look carefully for anomalies in walls and floors.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">🗺️</div>
+                        <h3>Buy Maps</h3>
+                        <p>Find the map maker in each area and purchase the region's map to greatly improve exploration efficiency.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">💎</div>
+                        <h3>Collect Resources</h3>
+                        <p>Gather silk and rosaries during exploration - they are important materials for crafting powerful items.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">⚡</div>
+                        <h3>Unlock Abilities</h3>
+                        <p>After gaining new movement abilities, remember to return to previously inaccessible areas for new discoveries.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hollow Knight: Silksong</h3>
+                    <p>Comprehensive Silksong strategy guide</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Navigation</h4>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../map/index.html">Pharloom Map</a></li>
+                        <li><a href="../bosses/index.html">Boss Guides</a></li>
+                        <li><a href="../quests/index.html">Quest System</a></li>
+                        <li><a href="../tools/index.html">Weapons & Tools</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hollow Knight Guide Site. Content for educational and exchange purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../scripts/main.js"></script>
+    <script src="../../scripts/map-interactive.js"></script>
+</body>
+</html>

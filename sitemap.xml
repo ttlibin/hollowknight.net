@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- 首页 -->
+    <url>
+        <loc>https://hollowknight.net/</loc>
+        <lastmod>2025-09-12</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Boss攻略主页 -->
+    <url>
+        <loc>https://hollowknight.net/pages/bosses/</loc>
+        <lastmod>2025-09-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- 具体Boss攻略页面 -->
+    <url>
+        <loc>https://hollowknight.net/pages/bosses/nail-master.html</loc>
+        <lastmod>2025-09-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://hollowknight.net/pages/bosses/sheo.html</loc>
+        <lastmod>2025-09-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://hollowknight.net/pages/bosses/oro-mato.html</loc>
+        <lastmod>2025-09-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://hollowknight.net/pages/bosses/hornet-1.html</loc>
+        <lastmod>2025-09-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://hollowknight.net/pages/bosses/false-knight.html</loc>
+        <lastmod>2025-09-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 魅力指南 -->
+    <url>
+        <loc>https://hollowknight.net/pages/charms/</loc>
+        <lastmod>2025-09-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://hollowknight.net/pages/charms/combat-charms.html</loc>
+        <lastmod>2025-09-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://hollowknight.net/pages/charms/exploration-charms.html</loc>
+        <lastmod>2025-09-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- 收集品指南 -->
+    <url>
+        <loc>https://hollowknight.net/pages/collectibles/</loc>
+        <lastmod>2025-09-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://hollowknight.net/pages/collectibles/grubs.html</loc>
+        <lastmod>2025-09-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://hollowknight.net/pages/collectibles/mask-shards.html</loc>
+        <lastmod>2025-09-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- 新手指南 -->
+    <url>
+        <loc>https://hollowknight.net/pages/guides/</loc>
+        <lastmod>2025-09-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://hollowknight.net/pages/guides/beginner-guide.html</loc>
+        <lastmod>2025-09-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 交互地图 -->
+    <url>
+        <loc>https://hollowknight.net/pages/map/interactive-map.html</loc>
+        <lastmod>2025-09-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+</urlset>

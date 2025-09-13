@@ -1,0 +1,359 @@
+/* 任务系统页面样式 */
+
+/* 页面标题样式 */
+.page-header {
+    text-align: center;
+    padding: 6rem 0 4rem;
+    background: linear-gradient(135deg, var(--bg-dark) 0%, rgba(26, 26, 26, 0.8) 100%);
+}
+
+.page-title {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px var(--shadow-dark);
+    font-weight: 700;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: rgba(245, 245, 220, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.quest-overview {
+    padding: 4rem 0;
+    background: var(--bg-dark);
+}
+
+.overview-content {
+    text-align: center;
+}
+
+.overview-text {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.quest-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--text-light);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* 任务类型网格 */
+.quest-types {
+    padding: 4rem 0;
+    background: var(--bg-light);
+}
+
+.quest-types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.quest-type-card {
+    background: rgba(24, 24, 44, 0.9);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    transition: var(--transition);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 165, 0, 0.1);
+}
+
+.quest-type-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border-color: var(--accent-color);
+}
+
+.quest-icon {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quest-icon.hunting {
+    background: rgba(255, 68, 68, 0.2);
+    border: 2px solid rgba(255, 68, 68, 0.5);
+}
+
+.quest-icon.collecting {
+    background: rgba(68, 255, 68, 0.2);
+    border: 2px solid rgba(68, 255, 68, 0.5);
+}
+
+.quest-icon.exploring {
+    background: rgba(68, 68, 255, 0.2);
+    border: 2px solid rgba(68, 68, 255, 0.5);
+}
+
+.quest-icon.great-hunt {
+    background: rgba(255, 165, 0, 0.2);
+    border: 2px solid var(--accent-color);
+}
+
+.quest-type-card h3 {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.quest-description {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.quest-features {
+    margin-bottom: 2rem;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-light);
+}
+
+.feature-icon {
+    font-size: 1.2rem;
+    width: 24px;
+    text-align: center;
+}
+
+.quest-examples {
+    background: rgba(13, 13, 23, 0.5);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    border-left: 4px solid var(--accent-color);
+}
+
+.quest-examples h4 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.quest-examples ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quest-examples li {
+    color: var(--text-light);
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 165, 0, 0.1);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.quest-examples li:last-child {
+    border-bottom: none;
+}
+
+.quest-examples li::before {
+    content: "•";
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+}
+
+/* 奖励系统 */
+.reward-system {
+    padding: 4rem 0;
+    background: var(--bg-dark);
+}
+
+.rewards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.reward-card {
+    background: rgba(24, 24, 44, 0.8);
+    border: 1px solid rgba(255, 165, 0, 0.2);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.reward-card:hover {
+    border-color: var(--accent-color);
+    background: rgba(24, 24, 44, 0.9);
+    transform: translateY(-5px);
+}
+
+.reward-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.reward-card h3 {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.reward-card p {
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+/* 完成技巧 */
+.quest-tips {
+    padding: 4rem 0;
+    background: var(--bg-light);
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.tip-card {
+    background: rgba(24, 24, 44, 0.9);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    border-left: 4px solid var(--accent-color);
+    transition: var(--transition);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tip-card:hover {
+    background: rgba(24, 24, 44, 1);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.tip-card h3 {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tip-card p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .quest-stats {
+        gap: 2rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .quest-types-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .rewards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .tips-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 2rem;
+    }
+    
+    .page-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .quest-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .quest-type-card {
+        padding: 1.5rem;
+    }
+    
+    .quest-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2.5rem;
+    }
+    
+    .reward-card {
+        padding: 1.5rem;
+    }
+    
+    .tip-card {
+        padding: 1.5rem;
+    }
+}

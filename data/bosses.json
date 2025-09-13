@@ -1,0 +1,363 @@
+{
+  "bosses": [
+    {
+      "id": "nail-master",
+      "name": "骨钉大师",
+      "englishName": "Nail Master",
+      "difficulty": 2,
+      "location": "王国之刃",
+      "hp": 300,
+      "reward": "旋斩技能",
+      "type": "可选Boss",
+      "description": "掌握古老剑术的隐居大师，战胜他可以学会强大的旋斩技能。",
+      "image": "/images/bosses/nail-master.jpg",
+      "attacks": [
+        {
+          "name": "旋转斩击",
+          "description": "原地旋转产生360度攻击范围",
+          "damage": 1,
+          "counter": "保持距离，等待攻击结束后反击"
+        },
+        {
+          "name": "前冲斩击",
+          "description": "快速向前冲刺并挥剑",
+          "damage": 1,
+          "counter": "跳跃躲避或向反方向移动"
+        },
+        {
+          "name": "上挑斩击",
+          "description": "向上挥剑攻击空中目标",
+          "damage": 1,
+          "counter": "避免停留在头顶上方"
+        }
+      ],
+      "recommendedCharms": [
+        {
+          "name": "快速治疗",
+          "reason": "缩短治疗时间"
+        },
+        {
+          "name": "长钉",
+          "reason": "增加攻击距离"
+        },
+        {
+          "name": "稳固身躯",
+          "reason": "攻击时不会被击退"
+        }
+      ],
+      "strategy": {
+        "phase1": {
+          "name": "开局适应",
+          "hpRange": "100%-70%",
+          "tips": [
+            "保持中等距离观察攻击模式",
+            "利用攻击后的硬直时间反击",
+            "主要使用普通攻击"
+          ]
+        },
+        "phase2": {
+          "name": "加速节奏",
+          "hpRange": "70%-30%",
+          "tips": [
+            "攻击频率增加，需要精确走位",
+            "寻找机会使用上劈攻击",
+            "注意管理灵魂及时治疗"
+          ]
+        },
+        "phase3": {
+          "name": "最后冲刺",
+          "hpRange": "30%-0%",
+          "tips": [
+            "攻击变得更加凶猛和快速",
+            "耐心等待安全的反击机会",
+            "不要贪刀，安全第一"
+          ]
+        }
+      }
+    },
+    {
+      "id": "sheo",
+      "name": "画师舍奥",
+      "englishName": "Sheo",
+      "difficulty": 3,
+      "location": "绿径",
+      "hp": 400,
+      "reward": "冲刺斩技能",
+      "type": "可选Boss",
+      "description": "从战士转为艺术家的骨钉大师，拥有独特的战斗风格。",
+      "image": "/images/bosses/sheo.jpg",
+      "attacks": [
+        {
+          "name": "颜料飞溅",
+          "description": "投掷颜料球进行远程攻击",
+          "damage": 1,
+          "counter": "左右移动躲避或跳跃"
+        },
+        {
+          "name": "画笔挥舞",
+          "description": "用画笔进行近距离攻击",
+          "damage": 1,
+          "counter": "保持距离或使用长钉魅力"
+        },
+        {
+          "name": "艺术爆发",
+          "description": "在周围产生大量颜料攻击",
+          "damage": 2,
+          "counter": "快速远离或找掩护"
+        }
+      ],
+      "recommendedCharms": [
+        {
+          "name": "长钉",
+          "reason": "安全距离攻击"
+        },
+        {
+          "name": "快速聚焦",
+          "reason": "快速恢复生命"
+        },
+        {
+          "name": "稳固身躯",
+          "reason": "防止被击退"
+        }
+      ]
+    },
+    {
+      "id": "oro-mato",
+      "name": "奥罗 & 马托",
+      "englishName": "Oro & Mato",
+      "difficulty": 5,
+      "location": "王国之刃",
+      "hp": 600,
+      "reward": "大旋斩技能",
+      "type": "隐藏Boss",
+      "description": "最后的骨钉大师兄弟，同时战斗的终极挑战。",
+      "image": "/images/bosses/oro-mato.jpg",
+      "attacks": [
+        {
+          "name": "双人旋斩",
+          "description": "两人同时使用旋转攻击",
+          "damage": 2,
+          "counter": "躲到平台边缘或跳跃躲避"
+        },
+        {
+          "name": "交替冲刺",
+          "description": "轮流进行冲刺攻击",
+          "damage": 1,
+          "counter": "在两人之间找安全位置"
+        },
+        {
+          "name": "终极合击",
+          "description": "血量低时的强力组合技",
+          "damage": 3,
+          "counter": "全力躲避，等待机会反击"
+        }
+      ],
+      "recommendedCharms": [
+        {
+          "name": "快速治疗",
+          "reason": "快速恢复生命"
+        },
+        {
+          "name": "长钉",
+          "reason": "安全距离攻击"
+        },
+        {
+          "name": "稳固身躯",
+          "reason": "防止被击退"
+        },
+        {
+          "name": "锋利之影",
+          "reason": "提高伤害输出"
+        }
+      ]
+    },
+    {
+      "id": "hornet-1",
+      "name": "大黄蜂 (绿径)",
+      "englishName": "Hornet (Greenpath)",
+      "difficulty": 2,
+      "location": "绿径",
+      "hp": 225,
+      "reward": "冲刺能力",
+      "type": "剧情Boss",
+      "description": "圣巢的保护者，敏捷而强大的战士。",
+      "image": "/images/bosses/hornet-1.jpg",
+      "attacks": [
+        {
+          "name": "针刺攻击",
+          "description": "快速的近距离刺击",
+          "damage": 1,
+          "counter": "跳跃躲避或后撤"
+        },
+        {
+          "name": "丝线陷阱",
+          "description": "在地面留下伤害陷阱",
+          "damage": 1,
+          "counter": "避免踩到丝线"
+        },
+        {
+          "name": "冲刺攻击",
+          "description": "快速冲向玩家",
+          "damage": 1,
+          "counter": "跳跃或快速移动躲避"
+        }
+      ],
+      "recommendedCharms": [
+        {
+          "name": "稳固身躯",
+          "reason": "防止被击退"
+        },
+        {
+          "name": "快速治疗",
+          "reason": "缩短治疗时间"
+        }
+      ]
+    },
+    {
+      "id": "false-knight",
+      "name": "虚假骑士",
+      "englishName": "False Knight",
+      "difficulty": 1,
+      "location": "忘却十字路",
+      "hp": 156,
+      "reward": "城市门钥",
+      "type": "剧情Boss",
+      "description": "被感染的迈拉，穿着巨大的装甲。",
+      "image": "/images/bosses/false-knight.jpg",
+      "attacks": [
+        {
+          "name": "重拳砸击",
+          "description": "用巨大的拳头砸向地面",
+          "damage": 2,
+          "counter": "站在他身后或跳跃躲避"
+        },
+        {
+          "name": "跳跃压制",
+          "description": "跳起来砸向玩家",
+          "damage": 2,
+          "counter": "快速离开落点范围"
+        },
+        {
+          "name": "愤怒冲撞",
+          "description": "横向冲撞攻击",
+          "damage": 1,
+          "counter": "跳跃或贴墙躲避"
+        }
+      ],
+      "recommendedCharms": [
+        {
+          "name": "稳固身躯",
+          "reason": "防止被击退"
+        }
+      ]
+    },
+    {
+      "id": "gruz-mother",
+      "name": "格鲁兹母虫",
+      "englishName": "Gruz Mother",
+      "difficulty": 1,
+      "location": "忘却十字路",
+      "hp": 35,
+      "reward": "无",
+      "type": "迷你Boss",
+      "description": "巨大的格鲁兹，会不断产生小格鲁兹。",
+      "image": "/images/bosses/gruz-mother.jpg",
+      "attacks": [
+        {
+          "name": "冲撞攻击",
+          "description": "在房间内来回冲撞",
+          "damage": 1,
+          "counter": "贴近墙壁或天花板躲避"
+        },
+        {
+          "name": "产卵",
+          "description": "死亡时产生大量小格鲁兹",
+          "damage": 1,
+          "counter": "快速消灭小格鲁兹"
+        }
+      ],
+      "recommendedCharms": []
+    }
+  ],
+  "bossCategories": [
+    {
+      "id": "story",
+      "name": "剧情Boss",
+      "description": "推进游戏剧情必须战胜的Boss"
+    },
+    {
+      "id": "optional",
+      "name": "可选Boss",
+      "description": "可以选择挑战的额外Boss"
+    },
+    {
+      "id": "hidden",
+      "name": "隐藏Boss",
+      "description": "需要特殊条件才能遇到的Boss"
+    },
+    {
+      "id": "mini",
+      "name": "迷你Boss",
+      "description": "较小的Boss敌人"
+    },
+    {
+      "id": "dlc",
+      "name": "DLC Boss",
+      "description": "DLC内容中的Boss"
+    }
+  ],
+  "difficultyLevels": [
+    {
+      "level": 1,
+      "name": "简单",
+      "description": "新手友好，攻击模式简单"
+    },
+    {
+      "level": 2,
+      "name": "普通",
+      "description": "需要一定技巧和策略"
+    },
+    {
+      "level": 3,
+      "name": "困难",
+      "description": "要求熟练的操作技巧"
+    },
+    {
+      "level": 4,
+      "name": "很难",
+      "description": "对时机和走位要求极高"
+    },
+    {
+      "level": 5,
+      "name": "极难",
+      "description": "顶级挑战，需要完美执行"
+    }
+  ],
+  "locations": [
+    {
+      "id": "forgotten-crossroads",
+      "name": "忘却十字路",
+      "englishName": "Forgotten Crossroads"
+    },
+    {
+      "id": "greenpath",
+      "name": "绿径",
+      "englishName": "Greenpath"
+    },
+    {
+      "id": "kingdom-edge",
+      "name": "王国之刃",
+      "englishName": "Kingdom's Edge"
+    },
+    {
+      "id": "city-of-tears",
+      "name": "泪水之城",
+      "englishName": "City of Tears"
+    },
+    {
+      "id": "crystal-peak",
+      "name": "水晶山峰",
+      "englishName": "Crystal Peak"
+    }
+  ]
+}

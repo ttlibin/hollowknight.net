@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boss Guide Encyclopedia | Hollow Knight Strategy Guide</title>
+    <meta name="description" content="Complete Hollow Knight Boss guide list, including detailed battle strategies, attack pattern analysis and reward information for all bosses.">
+    <meta name="keywords" content="Hollow Knight, Boss guide, Boss fight, battle strategy, combat tips">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/boss-list.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../../index.html">
+                    <img src="../../favicon.svg" alt="Hollow Knight Silksong" class="logo-img">
+                    <span class="logo-text">Hollow Knight Guide</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Boss Guides</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../charms/index.html" class="nav-link">Charm Guide</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../collectibles/index.html" class="nav-link">Collectibles</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../guides/index.html" class="nav-link">Beginner Guide</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容区域 -->
+    <main class="boss-list-main">
+        <!-- 页面标题 -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Boss Guide Encyclopedia</h1>
+                <p class="page-subtitle">Conquer every powerful enemy in Hallownest, master all combat skills</p>
+                
+                <!-- 搜索和筛选 -->
+                <div class="search-filter-bar">
+                    <div class="search-box">
+                        <input type="text" id="boss-search" placeholder="Search Boss name...">
+                        <button class="search-btn">🔍</button>
+                    </div>
+                    
+                    <div class="filter-options">
+                        <select id="difficulty-filter" class="filter-select">
+                            <option value="">All Difficulties</option>
+                            <option value="1">Easy ★</option>
+                            <option value="2">Normal ★★</option>
+                            <option value="3">Hard ★★★</option>
+                            <option value="4">Very Hard ★★★★</option>
+                            <option value="5">Extreme ★★★★★</option>
+                        </select>
+                        
+                        <select id="type-filter" class="filter-select">
+                            <option value="">All Types</option>
+                            <option value="Story Boss">Story Boss</option>
+                            <option value="Optional Boss">Optional Boss</option>
+                            <option value="Hidden Boss">Hidden Boss</option>
+                            <option value="Mini Boss">Mini Boss</option>
+                        </select>
+                        
+                        <select id="location-filter" class="filter-select">
+                            <option value="">All Areas</option>
+                            <option value="Forgotten Crossroads">Forgotten Crossroads</option>
+                            <option value="Greenpath">Greenpath</option>
+                            <option value="Kingdom's Edge">Kingdom's Edge</option>
+                            <option value="City of Tears">City of Tears</option>
+                            <option value="Crystal Peak">Crystal Peak</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Boss列表 -->
+        <section class="boss-list-section">
+            <div class="container">
+                <!-- 统计信息 -->
+                <div class="boss-stats">
+                    <div class="stat-card">
+                        <span class="stat-number" id="total-bosses">47</span>
+                        <span class="stat-label">Total Bosses</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="story-bosses">12</span>
+                        <span class="stat-label">Story Bosses</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="optional-bosses">25</span>
+                        <span class="stat-label">Optional Bosses</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="hidden-bosses">10</span>
+                        <span class="stat-label">Hidden Bosses</span>
+                    </div>
+                </div>
+
+                <!-- Boss网格 -->
+                <div class="boss-grid" id="boss-grid">
+                    <!-- Boss卡片 - 动态生成 -->
+                </div>
+
+                <!-- 加载更多按钮 -->
+                <div class="load-more-container">
+                    <button class="load-more-btn" id="load-more-btn">Load More Bosses</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 推荐攻略 -->
+        <section class="recommended-guides">
+            <div class="container">
+                <h2 class="section-title">Recommended Guides</h2>
+                <div class="guides-grid">
+                    <a href="false-knight.html" class="guide-card featured">
+                        <img src="../../images/bosses/false-knight.jpg" alt="False Knight">
+                        <div class="guide-info">
+                            <span class="guide-badge">Beginner Recommended</span>
+                            <h3>False Knight Guide</h3>
+                            <p>The first boss of the game, perfect for beginners to practice combat</p>
+                            <div class="guide-meta">
+                                <span class="difficulty">Difficulty: ★☆☆☆☆</span>
+                                <span class="type">Story Boss</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="nail-master.html" class="guide-card">
+                        <img src="../../images/bosses/nail-master.jpg" alt="Nail Master">
+                        <div class="guide-info">
+                            <h3>Nail Master Guide</h3>
+                            <p>Great opportunity to learn powerful cyclone slash skills</p>
+                            <div class="guide-meta">
+                                <span class="difficulty">Difficulty: ★★☆☆☆</span>
+                                <span class="type">Optional Boss</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="hornet-1.html" class="guide-card">
+                        <img src="../../images/bosses/hornet-1.jpg" alt="Hornet">
+                        <div class="guide-info">
+                            <h3>Hornet Guide</h3>
+                            <p>First encounter with Hallownest's guardian</p>
+                            <div class="guide-meta">
+                                <span class="difficulty">Difficulty: ★★☆☆☆</span>
+                                <span class="type">Story Boss</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 攻略技巧 -->
+        <section class="tips-section">
+            <div class="container">
+                <h2 class="section-title">General Combat Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">⚔️</div>
+                        <h3>Observe Attack Patterns</h3>
+                        <p>Every boss has fixed attack patterns. Watch carefully and remember their attack sequences and timing.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">🛡️</div>
+                        <h3>Patience is Key</h3>
+                        <p>Don't rush to attack, wait for safe counterattack opportunities. Greed is often the main cause of failure.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">💎</div>
+                        <h3>Use Charms Wisely</h3>
+                        <p>Choose appropriate charm combinations based on boss characteristics to make battles easier.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">💊</div>
+                        <h3>Master Healing Timing</h3>
+                        <p>Learn to heal safely during boss attack intervals - this is key for long battles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hollow Knight Guide</h3>
+                    <p>Most comprehensive Hollow Knight strategy guide</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Guide Categories</h4>
+                    <ul>
+                        <li><a href="index.html">Boss Guides</a></li>
+                        <li><a href="../charms/index.html">Charm Guide</a></li>
+                        <li><a href="../collectibles/index.html">Collectibles</a></li>
+                        <li><a href="../guides/index.html">Beginner Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../../index.html">Back to Home</a></li>
+                        <li><a href="#boss-grid">Boss List</a></li>
+                        <li><a href="#tips-section">Combat Tips</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hollow Knight Guide Site. Content for educational and exchange purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../scripts/main.js"></script>
+    <script src="../../scripts/boss-list.js"></script>
+</body>
+</html>

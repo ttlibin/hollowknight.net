@@ -1,0 +1,605 @@
+/* =====================================
+   Boss攻略页面专用样式
+   ===================================== */
+
+/* Boss攻略主布局 */
+.boss-guide-main {
+    margin-top: 80px;
+    min-height: 100vh;
+}
+
+/* 面包屑导航 */
+.breadcrumb {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.breadcrumb a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.breadcrumb a:hover {
+    color: var(--accent-color);
+}
+
+.breadcrumb span {
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 0.5rem;
+}
+
+/* Boss头部信息卡片 */
+.boss-header {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+.boss-info-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    align-items: start;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.boss-image {
+    position: relative;
+}
+
+.boss-portrait {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    border: 3px solid var(--accent-color);
+}
+
+.boss-difficulty {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.difficulty-label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-bottom: 0.25rem;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.star {
+    color: #444;
+    font-size: 1.2rem;
+}
+
+.star.filled {
+    color: var(--accent-color);
+}
+
+.boss-name {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.boss-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.25rem;
+}
+
+.stat-value {
+    font-weight: 600;
+    color: var(--accent-color);
+    font-size: 1.1rem;
+}
+
+.boss-description {
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* 攻略内容布局 */
+.guide-content {
+    padding: 3rem 0;
+    background: var(--bg-dark);
+}
+
+.guide-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 3rem;
+}
+
+/* 侧边栏目录 */
+.guide-sidebar {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.toc {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.toc h3 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.toc ul {
+    list-style: none;
+}
+
+.toc li {
+    margin-bottom: 0.5rem;
+}
+
+.toc a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    padding: 0.25rem 0;
+    display: block;
+    transition: var(--transition);
+    border-left: 2px solid transparent;
+    padding-left: 0.5rem;
+}
+
+.toc a:hover,
+.toc a.active {
+    color: var(--accent-color);
+    border-left-color: var(--accent-color);
+}
+
+/* 主要攻略内容 */
+.guide-main {
+    max-width: none;
+}
+
+.guide-section {
+    margin-bottom: 3rem;
+}
+
+.guide-section h2 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(255, 165, 0, 0.3);
+}
+
+.content-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.content-card h3 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.content-card p {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.content-card ol,
+.content-card ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.content-card li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* 专业提示框 */
+.pro-tip {
+    background: linear-gradient(135deg, rgba(255, 165, 0, 0.1) 0%, rgba(255, 165, 0, 0.05) 100%);
+    border-left: 4px solid var(--accent-color);
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 0 4px 4px 0;
+}
+
+/* 魅力推荐设置 */
+.charm-setup {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.charm-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: var(--transition);
+    min-width: 100px;
+}
+
+.charm-item:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.charm-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+}
+
+.charm-item span {
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--text-light);
+}
+
+/* 攻击模式分析 */
+.attack-pattern {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.attack-pattern h3 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.attack-info {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.attack-description p {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.attack-visual img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 高级技巧 */
+.tip-item {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.tip-item h3 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* 奖励展示 */
+.reward-grid {
+    margin-bottom: 2rem;
+}
+
+.reward-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 2px solid rgba(255, 165, 0, 0.3);
+}
+
+.reward-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+.reward-info h3 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.usage-tip {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: rgba(255, 165, 0, 0.1);
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.additional-rewards h3 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 165, 0, 0.3);
+    padding-bottom: 0.5rem;
+}
+
+/* 相关攻略推荐 */
+.related-guides {
+    padding: 3rem 0;
+    background: var(--bg-light);
+    color: var(--text-dark);
+}
+
+.related-guides h2 {
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.related-card {
+    display: block;
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.related-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-color: var(--accent-color);
+}
+
+.related-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.related-info {
+    padding: 1.5rem;
+}
+
+.related-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.related-info p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+    .guide-layout {
+        grid-template-columns: 200px 1fr;
+        gap: 2rem;
+    }
+    
+    .boss-info-card {
+        grid-template-columns: 200px 1fr;
+        gap: 2rem;
+    }
+    
+    .boss-portrait {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .guide-layout {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .guide-sidebar {
+        position: static;
+        order: -1;
+    }
+    
+    .boss-info-card {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .boss-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .attack-info {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .attack-visual {
+        order: -1;
+    }
+    
+    .charm-setup {
+        justify-content: center;
+    }
+    
+    .reward-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .boss-header {
+        padding: 2rem 0;
+    }
+    
+    .boss-info-card {
+        padding: 1.5rem;
+    }
+    
+    .boss-name {
+        font-size: 2rem;
+    }
+    
+    .content-card {
+        padding: 1.5rem;
+    }
+    
+    .toc {
+        padding: 1rem;
+    }
+}
+
+/* 滚动进度指示器 */
+.reading-progress {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 999;
+}
+
+.reading-progress-bar {
+    height: 100%;
+    background: var(--accent-color);
+    width: 0%;
+    transition: width 0.1s ease;
+}
+
+/* 返回顶部按钮 */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--accent-color);
+    color: var(--text-dark);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: var(--transition);
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background: #ff8c00;
+    transform: translateY(-2px);
+}
+
+.back-to-top.show {
+    display: flex;
+}
+
+/* 动画效果 */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.guide-section {
+    animation: slideInUp 0.6s ease-out;
+}
+
+/* 打印样式优化 */
+@media print {
+    .navbar,
+    .guide-sidebar,
+    .related-guides,
+    .footer,
+    .back-to-top {
+        display: none;
+    }
+    
+    .boss-guide-main {
+        margin-top: 0;
+    }
+    
+    .guide-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .boss-info-card {
+        break-inside: avoid;
+    }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "hollowknight-guide-site",
+  "version": "1.0.0",
+  "description": "Hollow Knight 空洞骑士攻略指南站 - 最全面的游戏攻略和指南",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/index.html",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "cleancss -o styles/main.min.css styles/main.css",
+    "minify-js": "uglifyjs scripts/main.js -o scripts/main.min.js -c -m",
+    "dev": "live-server --port=3000 --watch=. --open=/index.html",
+    "lint": "eslint scripts/ --ext .js",
+    "format": "prettier --write \"**/*.{html,css,js}\"",
+    "optimize-images": "imagemin images/* --out-dir=images/optimized",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hollow-knight",
+    "空洞骑士",
+    "游戏攻略",
+    "guide",
+    "walkthrough",
+    "boss-fights",
+    "collectibles",
+    "charms",
+    "metroidvania"
+  ],
+  "author": "Hollow Knight Guide Team",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "clean-css-cli": "^5.6.2",
+    "uglify-js": "^3.17.4",
+    "eslint": "^8.44.0",
+    "prettier": "^3.0.0",
+    "imagemin": "^8.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2"
+  },
+  "dependencies": {
+    "intersection-observer": "^0.12.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/hollowknight-guide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/hollowknight-guide/issues"
+  },
+  "homepage": "https://hollowknight.net"
+}
