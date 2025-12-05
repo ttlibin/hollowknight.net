@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Player</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            overflow: hidden;
+        }
+
+        .video-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .youtube-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .youtube-iframe {
+                width: 100%;
+                height: 60vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <iframe
+            class="youtube-iframe"
+            frameborder="0"
+            allowfullscreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+    </div>
+
+    <script>
+        // 获取URL参数
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // 页面加载完成后设置iframe
+        document.addEventListener('DOMContentLoaded', function() {
+            const videoId = getUrlParameter('vid');
+            const iframe = document.querySelector('.youtube-iframe');
+
+            if (videoId) {
+                // 尝试最简单的YouTube嵌入URL
+                const youtubeUrl = `https://www.youtube.com/embed/${videoId}?` +
+                    'rel=0&modestbranding=1&controls=1&showinfo=0';
+
+                iframe.src = youtubeUrl;
+            } else {
+                // 如果没有视频ID，显示默认视频
+                iframe.src = 'https://www.youtube.com/embed/pFAknD_9U7c?modestbranding=1&rel=0';
+            }
+        });
+
+        // 处理来自父窗口的消息
+        window.addEventListener('message', function(event) {
+            // 安全检查：确保消息来源可信
+            if (event.data && event.data.type === 'changeVideo') {
+                const iframe = document.querySelector('.youtube-iframe');
+                const videoId = event.data.videoId;
+
+                if (videoId) {
+                    const youtubeUrl = `https://www.youtube.com/embed/${videoId}?` +
+                        'rel=0&modestbranding=1&controls=1&showinfo=0';
+
+                    iframe.src = youtubeUrl;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

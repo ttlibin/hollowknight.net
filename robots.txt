@@ -1,37 +1,23 @@
 User-agent: *
 Allow: /
 
-# 网站地图位置
+# Sitemap location
 Sitemap: https://hollowknight.net/sitemap.xml
 
-# 允许爬取主要内容
+# Allow only key content directories
 Allow: /pages/
-Allow: /data/
-Allow: /styles/
-Allow: /scripts/
 Allow: /images/
+Allow: /styles/
 
-# 禁止爬取的目录
+# Disallow non-content and system directories
 Disallow: /node_modules/
 Disallow: /tmp/
 Disallow: /.git/
 Disallow: /logs/
+Disallow: /scripts/
+Disallow: /data/
 
-# 针对特定搜索引擎的规则
-User-agent: Googlebot
-Allow: /
+# Noindex utility pages via robots meta on-page when needed
 
-User-agent: Bingbot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-# 爬取延迟（秒）
+# Crawl rate
 Crawl-delay: 1
-
-# 特殊页面
-Allow: /pages/bosses/
-Allow: /pages/charms/
-Allow: /pages/collectibles/
-Allow: /pages/guides/
