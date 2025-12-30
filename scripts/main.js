@@ -37,24 +37,27 @@ function initNavigation() {
     // 导航链接活跃状态
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            
+            const href = this.getAttribute('href');
+
             // 移除所有活跃状态
             navLinks.forEach(l => l.classList.remove('active'));
-            
+
             // 添加当前活跃状态
             this.classList.add('active');
-            
-            // 滚动到目标区域
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            
-            if (targetSection) {
-                targetSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+
+            // 只处理页面内锚点链接（以#开头）
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                const targetSection = document.querySelector(href);
+
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
             }
+            // 其他链接（如 pages/xxx）让它们正常跳转
         });
     });
 }

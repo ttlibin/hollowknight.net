@@ -1069,3 +1069,548 @@ html {
     color: rgba(255, 255, 220, 0.9);
     line-height: 1.6;
 }
+
+/* =====================================
+   游戏介绍区域样式
+   ===================================== */
+.game-intro {
+    padding: 5rem 0;
+    background: var(--bg-light);
+    color: var(--text-dark);
+}
+
+.game-intro .section-title {
+    color: var(--primary-color);
+}
+
+.intro-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.intro-text h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+}
+
+.intro-text p {
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+}
+
+.intro-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.highlight-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.highlight-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.highlight-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.highlight-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.highlight-item p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* =====================================
+   游戏受欢迎原因区域样式
+   ===================================== */
+.game-popularity {
+    padding: 5rem 0;
+    background: var(--bg-dark);
+}
+
+.popularity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.popularity-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition);
+}
+
+.popularity-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-color);
+}
+
+.popularity-card h3 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-family: var(--font-heading);
+}
+
+.popularity-card p {
+    color: rgba(245, 245, 220, 0.9);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.popularity-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.popularity-card ul li {
+    color: rgba(245, 245, 220, 0.85);
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.popularity-card ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+/* =====================================
+   战斗系统区域样式
+   ===================================== */
+.combat-system {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--bg-dark) 100%);
+}
+
+.combat-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.combat-block {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.combat-block h3 {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+    border-bottom: 2px solid rgba(255, 165, 0, 0.3);
+    padding-bottom: 0.5rem;
+}
+
+.combat-block > p {
+    color: rgba(255, 255, 220, 0.9);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.combat-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.combat-feature {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    border-left: 3px solid var(--accent-color);
+}
+
+.combat-feature strong {
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.combat-feature p {
+    color: rgba(255, 255, 220, 0.8);
+    line-height: 1.6;
+}
+
+.silk-mechanics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.silk-mechanic {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.silk-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.silk-mechanic h4 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.silk-mechanic p {
+    color: rgba(255, 255, 220, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.combat-tip {
+    background: rgba(255, 165, 0, 0.1);
+    border-left: 4px solid var(--accent-color);
+    padding: 1rem 1.5rem;
+    margin-top: 1.5rem;
+    color: rgba(255, 255, 220, 0.9);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.tools-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.tool-detail {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.25rem;
+    border-radius: var(--border-radius);
+}
+
+.tool-detail h4 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.tool-detail p {
+    color: rgba(255, 255, 220, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* =====================================
+   Boss 战略区域样式
+   ===================================== */
+.boss-strategies {
+    padding: 5rem 0;
+    background: var(--bg-light);
+    color: var(--text-dark);
+}
+
+.boss-strategies .section-title,
+.boss-strategies .section-subtitle {
+    color: var(--primary-color);
+}
+
+.boss-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+
+.boss-fundamentals {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.boss-fundamentals h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-heading);
+}
+
+.boss-steps {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: boss-counter;
+}
+
+.boss-steps li {
+    position: relative;
+    padding-left: 3rem;
+    margin-bottom: 1.5rem;
+    color: #444;
+    line-height: 1.7;
+}
+
+.boss-steps li::before {
+    counter-increment: boss-counter;
+    content: counter(boss-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(135deg, var(--accent-color), #ff8c00);
+    color: var(--text-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.boss-types h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-heading);
+}
+
+.boss-type-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.boss-type-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid var(--accent-color);
+}
+
+.boss-type-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.boss-type-card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.boss-warning {
+    color: #d32f2f;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-top: 0.75rem;
+}
+
+/* =====================================
+   玩家评价区域样式
+   ===================================== */
+.player-reviews {
+    padding: 5rem 0;
+    background: var(--bg-dark);
+}
+
+.reviews-summary {
+    margin-bottom: 3rem;
+}
+
+.review-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+}
+
+.review-stat {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-score {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-source {
+    color: rgba(255, 255, 220, 0.7);
+    font-size: 0.9rem;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.review-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.review-card.positive {
+    border-color: rgba(76, 175, 80, 0.3);
+}
+
+.review-card.critical {
+    border-color: rgba(255, 152, 0, 0.3);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.review-score {
+    color: #ffd700;
+    font-size: 1rem;
+}
+
+.review-verified {
+    background: rgba(76, 175, 80, 0.2);
+    color: #81c784;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.review-text {
+    color: rgba(255, 255, 220, 0.9);
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.review-meta {
+    color: rgba(255, 255, 220, 0.6);
+    font-size: 0.85rem;
+    text-align: right;
+}
+
+.review-note {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 152, 0, 0.1);
+    border-left: 4px solid #ff9800;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.review-note p {
+    color: rgba(255, 255, 220, 0.85);
+    line-height: 1.6;
+}
+
+/* =====================================
+   FAQ 区域样式
+   ===================================== */
+.faq-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--bg-light) 0%, #fff 100%);
+    color: var(--text-dark);
+}
+
+.faq-section .section-title {
+    color: var(--primary-color);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+}
+
+.faq-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+}
+
+.faq-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.faq-question {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-heading);
+}
+
+.faq-answer {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* =====================================
+   响应式设计 - 新增区域
+   ===================================== */
+@media (max-width: 900px) {
+    .intro-content {
+        grid-template-columns: 1fr;
+    }
+
+    .boss-content {
+        grid-template-columns: 1fr;
+    }
+
+    .popularity-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .combat-features,
+    .silk-mechanics,
+    .tools-list,
+    .boss-type-grid,
+    .review-stats,
+    .reviews-grid,
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-highlights {
+        flex-direction: column;
+    }
+}
